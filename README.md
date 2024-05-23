@@ -1,3 +1,22 @@
+For Installation: 
+
+#open cmd and write git clone https://github.com/abeer26omar/react-blog
+
+#then cd react-blog 
+
+#install dep:
+npm install
+
+#now it's time to run the app
+
+#just open v.s terminal and write "npm run dev"
+and HAPPY HACKING :)
+
+########
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
