@@ -7,6 +7,7 @@ import Success from '../ui/Success';
 import Error from '../ui/Error';
 import Modal from '../ui/Modal';
 import {handleApiError} from '../http/ErrorHandler';
+import { Post } from '../modal/ApiResponsModal';
 
 export default function DeleteModal(props: any) {
 
@@ -20,15 +21,27 @@ export default function DeleteModal(props: any) {
     onSuccess: () => {
         setSuccessMsg('post Deleted Successfully')
         setTimeout(()=>{
-            setSuccessMsg('')
-            props.onClose()
+            setSuccessMsg('');
+            props.onClose();
         }, 1000)
     }
   })
 
   const deletePostId = () => {
+    removeElement(props.postId)
     mutate(props.postId);
   };
+
+  const removeElement = (id: number) => {
+      const indexToRemove = props.posts.findIndex((post: Post) => id === post.id);
+      if (indexToRemove !== -1) {
+          const updatedPosts = [...props.posts]; 
+          updatedPosts.splice(indexToRemove, 1);
+          if(isSuccess){
+            props.getDeletedResult(updatedPosts);
+          }
+      }
+  }
 
   return (
     <Modal open={props.open} onClose={props.onClose}>

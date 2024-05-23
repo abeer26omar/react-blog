@@ -58,12 +58,16 @@ const Blog = () => {
     }, []);
 
     const getSearchResults = (data: []) => {
-        setCards(data?.slice(0, 3));
+        setCards(data?.slice(0, 9));
         if(data?.length === 0){
             setEmpty('there is no posts');
         }else{
             setEmpty('');
         }
+    };
+
+    const getDeletedResult = (data: []) => {
+        setCards(data?.slice(0, 9));
     };
 
     return (
@@ -154,6 +158,8 @@ const Blog = () => {
                 open={openDel}
                 onClose={closeDelModal}
                 postId={postId}
+                posts={posts}
+                getDeletedResult={getDeletedResult}
             />
             <ViewModal 
                 open={openView}
