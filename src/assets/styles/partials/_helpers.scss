@@ -1,0 +1,130 @@
+/* ***********************************************************************************
+                THIS IS MY PRE-DEFINED DESIGN SYSTEM AND THIS IS
+                HOW I MANGE STYLING IN SASS IT"S NOT USED HERE I PROVIDE THEM TO BE CONSIDERED 
+************************************************************************************************ */
+
+/* font-size */
+.fs-8 {
+    font-size: px2rem(8px);
+}
+
+.fs-9 {
+    font-size: px2rem(9px);
+}
+
+.fs-11 {
+    font-size: px2rem(11px);
+}
+
+.fs-13 {
+    font-size: px2rem(13px);
+}
+
+.fs-16 {
+    font-size: px2rem(16px);
+}
+
+.fs-18 {
+    font-size: px2rem(18px);
+}
+
+.fs-19 {
+    font-size: px2rem(19px);
+}
+
+.fs-23 {
+    font-size: px2rem(23px);
+}
+
+.fs-28 {
+    font-size: px2rem(28px);
+}
+
+.fs-33 {
+    font-size: px2rem(33px);
+}
+
+.fs-40 {
+    font-size: px2rem(40px);
+}
+
+.fs-48 {
+    font-size: px2rem(48px);
+}
+
+.fs-57 {
+    font-size: px2rem(57px);
+}
+
+.fs-69 {
+    font-size: px2rem(69px);
+    
+    &--xs {
+        @include mq("xsmall") {
+          font-size: px2rem(18px);
+        }
+    }
+}
+
+.fs-83 {
+    font-size: px2rem(83px);
+}
+
+.fs-99 {
+    font-size: px2rem(99px);
+}
+
+/* font-weight */
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+/* line-height */
+
+.lh-n {
+    line-height: normal;
+}
+
+.lh-24 {
+    line-height: 24px;
+}
+
+.lh-28 {
+    line-height: 28.13px;
+}
+
+.lh-56 {
+    line-height: 56px;
+}
+
+.lh-82 {
+    line-height: 82.39px;
+}
+
+.lh-81 {
+    line-height: 81.32px;
+}

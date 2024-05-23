@@ -1,0 +1,421 @@
+/* ***********************************************************************************
+                THIS IS MY PRE-DEFINED DESIGN SYSTEM AND THIS IS
+                HOW I MANGE STYLING IN SASS IT"S NOT USED HERE I PROVIDE THEM TO BE CONSIDERED 
+************************************************************************************************ */
+/* ***************************
+    padding
+***************************** */
+// 1- x gutter
+
+.px-160 {
+    padding-left: px2rem(160px);
+    padding-right: px2rem(160px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-left: px2rem(18px);
+            padding-right: px2rem(18px);
+        }
+    }
+}
+
+.px-120 {
+    padding-left: px2rem(120px);
+    padding-right: px2rem(120px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-left: px2rem(18px);
+            padding-right: px2rem(18px);
+        }
+    }
+}
+
+.px-76 {
+    padding-left: px2rem(76px);
+    padding-right: px2rem(76px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-left: px2rem(18px);
+            padding-right: px2rem(18px);
+        }
+    }
+}
+
+.px-60{
+    padding-left: px2rem(60px);
+    padding-right: px2rem(60px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-left: px2rem(16px);
+            padding-right: px2rem(16px);
+        }
+    }
+}
+
+.px-40 {
+    padding-left: px2rem(40px);
+    padding-right: px2rem(40px);
+
+    &--xxl {
+        @include mq("xxlarge") {
+            padding-left: px2rem(24px);
+            padding-right: px2rem(24px);
+        }
+    }
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-left: px2rem(16px);
+            padding-right: px2rem(16px);
+        }
+    }
+}
+
+// 2- y gutter
+
+.py-155{
+    padding-top: px2rem(155px);
+    padding-bottom: px2rem(155px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-top: px2rem(16px);
+            padding-bottom: px2rem(16px);
+        }
+    }
+}
+
+.py-104 {
+    padding-top: px2rem(104px);
+    padding-bottom: px2rem(104px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-top: px2rem(16px);
+            padding-bottom: px2rem(16px);
+        }
+    }
+}
+
+.py-88 {
+    padding-top: px2rem(88px);
+    padding-bottom: px2rem(88px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-top: px2rem(16px);
+            padding-bottom: px2rem(16px);
+        }
+    }
+}
+
+.py-67 {
+    padding-top: px2rem(67px);
+    padding-bottom: px2rem(67px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-top: px2rem(16px);
+            padding-bottom: px2rem(16px);
+        }
+    }
+}
+
+.py-60 {
+    padding-top: px2rem(60px);
+    padding-bottom: px2rem(60px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-top: px2rem(16px);
+            padding-bottom: px2rem(16px);
+        }
+    }
+}
+
+.py-57 {
+    padding-top: px2rem(57px);
+    padding-bottom: px2rem(57px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-top: px2rem(16px);
+            padding-bottom: px2rem(16px);
+        }
+    }
+}
+
+.py-52 {
+    padding-top: px2rem(52px);
+    padding-bottom: px2rem(52px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-top: px2rem(16px);
+            padding-bottom: px2rem(16px);
+        }
+    }
+}
+
+.py-40 {
+    padding-top: px2rem(40px);
+    padding-bottom: px2rem(40px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-top: px2rem(16px);
+            padding-bottom: px2rem(16px);
+        }
+    }
+}
+
+.py-32 {
+    padding-top: px2rem(32px);
+    padding-bottom: px2rem(32px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-top: px2rem(16px);
+            padding-bottom: px2rem(16px);
+        }
+    }
+}
+
+.py-24 {
+    padding-top: px2rem(24px);
+    padding-bottom: px2rem(24px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-top: px2rem(16px);
+            padding-bottom: px2rem(16px);
+        }
+    }
+}
+
+// 3- top
+
+.pt-32{
+    padding-top: px2rem(32px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-top: px2rem(16px);
+        }
+    }
+}
+
+.pt-30 {
+    padding-top: px2rem(30px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-top: px2rem(16px);
+        }
+    }
+}
+
+.pt-23 {
+    padding-top: px2rem(23px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-top: px2rem(16px);
+        }
+    }
+
+}
+
+// 4- bottom
+
+.pb-32{
+    padding-bottom: px2rem(32px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-bottom: px2rem(16px);
+        }
+    }
+}
+
+// 5- left
+
+.pl-100{
+    padding-left: px2rem(100px);
+
+    &--xs {
+        @include mq("xsmall") {
+            padding-left: px2rem(16px);
+        }
+    }
+}
+
+// 6- right
+
+/* ***************************
+    2-margin
+***************************** */
+// 1- x gutter
+
+// 2- y gutter
+
+.my-40 {
+    margin-top: px2rem(40px);
+    margin-bottom: px2rem(40px);
+
+    &--xs {
+        @include mq("xsmall") {
+            margin-top: px2rem(16px);
+            margin-bottom: px2rem(16px);
+        }
+    }
+}
+
+.my-32{
+    margin-top: px2rem(32px);
+    margin-bottom: px2rem(32px);
+
+    &--xs {
+        @include mq("xsmall") {
+            margin-top: px2rem(16px);
+            margin-bottom: px2rem(16px);
+        }
+    }
+}
+
+.my-24 {
+    margin-top: px2rem(24px);
+    margin-bottom: px2rem(24px);
+
+    &--xs {
+        @include mq("xsmall") {
+            margin-top: px2rem(16px);
+            margin-bottom: px2rem(16px);
+        }
+    }
+}
+
+// 3- top
+
+// 4- bottom
+
+.mb-40 {
+    margin-bottom: 2.5rem;
+
+    &--xs {
+        @include mq("xsmall") {
+            margin-bottom: px2rem(16px);
+        }
+    }
+}
+
+.mb-32 {
+    margin-bottom: px2rem(32px);
+
+    &--xs {
+        @include mq("xsmall") {
+            margin-bottom: px2rem(16px);
+        }
+    }
+}
+
+.mb-24 {
+    margin-bottom: px2rem(24px);
+
+    &--xs {
+        @include mq("xsmall") {
+            margin-bottom: px2rem(16px);
+        }
+    }
+}
+
+.mb-36 {
+    margin-bottom: px2rem(36px);
+
+    &--xs {
+        @include mq("xsmall") {
+            margin-bottom: px2rem(16px);
+        }
+    }
+}
+
+.mb-16 {
+    margin-bottom: 1rem;
+
+    &--xs {
+        @include mq("xsmall") {
+            margin-bottom: px2rem(16px);
+        }
+    }
+}
+
+// 5- left
+
+.ml-24 {
+    margin-left: 1.5rem;
+
+    &--xs {
+        @include mq("xsmall") {
+            margin-left: px2rem(16px);
+        }
+    }
+}
+
+.ml-32 {
+    margin-left: 2rem;
+
+    &--xs {
+        @include mq("xsmall") {
+            margin-left: px2rem(16px);
+        }
+    }
+}
+
+.ml-14 {
+    margin-left: 14rem;
+
+    &--xs {
+        @include mq("xsmall") {
+            margin-left: px2rem(16px);
+        }
+    }
+
+}
+
+// 6- right
+
+.mr-72 {
+    margin-right: px2rem(72px);
+
+    &--xs {
+        @include mq("xsmall") {
+            margin-right: px2rem(16px);
+        }
+    }
+}
+
+
+
+// wrong values 
+//.p-60-76 {
+    //     padding: 60px 76px;
+    // }
+    
+    // .p-51-76 {
+    //     padding: 51px 76px;
+    // }
+    
+    // .p-79-76 {
+    //     padding: 79px 76px;
+    // }
+    
+    // .p-88-76 {
+    //     padding: 88px 76px;
+    // }
+    
+    // .p-46-76 {
+    //     padding: 46px 76px;
+    // }

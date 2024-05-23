@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@import "partials/variables";
+@import "partials/functions";
+@import "partials/mixin";
+@import "partials/gutters";
+@import "partials/helpers";
+@import "partials/base";
+
+// components 
+@import "components/Header.scss";
